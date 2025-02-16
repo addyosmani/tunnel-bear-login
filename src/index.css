@@ -6,4 +6,10 @@
   .form-input {
     @apply rounded-lg border-gray-300 w-full focus:border-tunnel-bear focus:ring focus:ring-tunnel-bear focus:ring-opacity-50;
   }
+  .form-input-error {
+    @apply border-red-500 focus:border-red-500 focus:ring-red-500;
+  }
+  .form-button {
+    @apply py-4 w-full rounded-lg bg-green-300 font-semibold text-lg focus:outline-none hover:bg-green-400 transition-all;
+  }
 }
