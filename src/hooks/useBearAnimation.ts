@@ -21,7 +21,7 @@ export function useBearAnimation({
       // For email input, smoothly transition through watch bear images
       const progress = Math.min(emailLength / 30, 1); // Max out at 30 characters
       const index = Math.min(
-        Math.floor(progress * (watchBearImages.length - 1)),
+        Math.ceil(progress * (watchBearImages.length - 1)),
         watchBearImages.length - 1
       );
       setCurrentBearImage(watchBearImages[Math.max(0, index)]);
